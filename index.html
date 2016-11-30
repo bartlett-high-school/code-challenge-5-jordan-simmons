@@ -8,22 +8,17 @@ Select all of this document, copy and paste it into a new document in sublime te
 Step 2:
 Inside of the .container div, insert typography tags h2, h3, h4, h5, h6. Add some content inside of each tag. 
 
-Step 3: 
-After each h tag, add a p tag with some content inside of it.
-
 Step 3:
 In the style tag, write some CSS for each of the tags you added to create a well-designed typography style tile. Consider things like font-family, font-size, color, letter-spacing, line-height, etc.
-
 Step 4: 
 Paste all the code from your sublime document back into github and commit your changes.
-
 BONUS: Implement a web font from font-squirrel correctly for 3 extra points.
-
 -->
 
 <!DOCTYPE html>
 <html>
 	<head>
+	<link href="https://fonts.googleapis.com/css?family=Bungee|Oswald" rel="stylesheet">
 		<title>Code Challenge #5</title>
 		<style>
 			body {
@@ -39,6 +34,25 @@ BONUS: Implement a web font from font-squirrel correctly for 3 extra points.
 			section {
 				padding: 25px 0;
 			}
+			.container{
+				width: 89%;
+				margin: 5px auto;
+			}
+			h1, h2, h3, h4, h5, h6{
+				
+				font-family: 'Bungee', 'cursive';
+				color: #2f2f2f;
+			}
+			h2, h3, h4, h5, h6{
+				border-bottom: 1px solid #2f2f2f;
+				background: linear-gradient(to right, #bfbfbf, #fff);
+			}
+			p{
+				font-family: 'Oswald', sans-serif;
+				color: #2f2f2f;
+				width: 85%;
+				margin: 3px auto;
+			}
 		</style>
 	</head>
 	<body>
@@ -47,6 +61,22 @@ BONUS: Implement a web font from font-squirrel correctly for 3 extra points.
 		</header>
 		<section>
 			<div class="container">
+				<h2>Lorem</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua.</p>
+				<h3>Ipsum</h3>
+				<p>Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat.</p>
+				<h4>Dolor</h4>
+				<p>Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur.</p>
+				<h5>Sit</h5>
+				<p>Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				<h6>Amet</h6>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua.</p>
 			</div>
 		</section>
 		<footer>
